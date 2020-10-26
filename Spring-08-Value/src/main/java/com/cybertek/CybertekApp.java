@@ -1,7 +1,7 @@
-package cybertek;
+package com.cybertek;
 
 
-import cybertek.Interfaces.Course;
+import com.cybertek.Interfaces.Course;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

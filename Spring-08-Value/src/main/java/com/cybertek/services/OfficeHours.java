@@ -1,6 +1,5 @@
-package cybertek.services;
+package com.cybertek.services;
 
-import cybertek.Interfaces.ExtraSessions;
 import org.springframework.stereotype.Component;
 
 @Component

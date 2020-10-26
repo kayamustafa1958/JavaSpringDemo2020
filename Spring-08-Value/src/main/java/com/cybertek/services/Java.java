@@ -1,8 +1,7 @@
-package cybertek.services;
+package com.cybertek.services;
 
 
-import cybertek.Interfaces.Course;
-import cybertek.Interfaces.ExtraSessions;
+import com.cybertek.Interfaces.Course;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
