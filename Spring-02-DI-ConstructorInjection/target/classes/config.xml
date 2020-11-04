@@ -7,9 +7,9 @@
     <bean id="java" class="com.cybertek.com.cybertek.services.services.Java">
         <constructor-arg ref="officeHours"/>
     </bean>
-    <bean id="selenium" class="com.cybertek.com.cybertek.services.Selenium"></bean>
+    <bean id="selenium" class="com.cybertek.com.Selenium"></bean>
 
-    <bean id="officeHours" class="com.cybertek.services.OfficeHours"></bean>
+    <bean id="officeHours" class="com.OfficeHours"></bean>
 
 
 

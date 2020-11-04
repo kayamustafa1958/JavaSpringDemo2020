@@ -7,8 +7,8 @@
     <bean id="java" class="com.cybertek.services.services.Java">
         <property name="extraSessions" ref="officeHours"/>
     </bean>
-    <bean id="selenium" class="com.cybertek.services.Selenium"></bean>
+    <bean id="selenium" class="com.Selenium"></bean>
 
-    <bean id="officeHours" class="com.cybertek.services.OfficeHours"></bean>
+    <bean id="officeHours" class="com.OfficeHours"></bean>
 
 </beans>

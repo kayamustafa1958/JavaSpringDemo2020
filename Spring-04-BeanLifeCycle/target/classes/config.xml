@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="java" class="com.cybertek.services.services.Java" init-method="myInitMethod" destroy-method="myDestroyMethod"></bean>
-    <bean id="selenium" class="com.cybertek.services.Selenium"></bean>
+    <bean id="selenium" class="com.Selenium"></bean>
 
 
 </beans>
