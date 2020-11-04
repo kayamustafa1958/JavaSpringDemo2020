@@ -8,8 +8,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class Java implements Course {
 
+
+    public String getInstructorName() {
+        return instructorName;
+    }
+
+    public void setInstructorName(String instructorName) {
+        this.instructorName = instructorName;
+    }
+
     @Value("${instructor}")
-    private String instructorName;
+     private String instructorName;
 
     private ExtraSession extraSession;
 
@@ -20,6 +29,6 @@ public class Java implements Course {
     @Override
     public int getTeachinghours() {
         System.out.println("35 hours");
-    return 35+extraSession.getHours();
+        return 35 + extraSession.getHours();
     }
 }
