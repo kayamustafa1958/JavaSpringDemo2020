@@ -1,3 +1,4 @@
+
 package com.cybertek.services.floor;
 
 import com.cybertek.interfaces.floorTypes.Floor;
@@ -16,6 +17,4 @@ public class Bedroom implements Floor {
     public BigDecimal getArea() {
         return width.pow(2);
     }
-
-
 }
