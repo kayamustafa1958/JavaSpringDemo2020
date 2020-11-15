@@ -15,11 +15,12 @@ public class HomeController {
         // pointing localhost:8080/
     }
 
-    @RequestMapping(method = RequestMethod.GET, value="/mkaya")
+    @RequestMapping(method = RequestMethod.GET, value = "/mkaya")
     public String getRequestMapping2() {
         return "home";
         // pointing localhost:8080/mkaya
     }
+
     @RequestMapping("/gizo")
     public String getRequestMapping3() {
         return "home";
@@ -27,26 +28,27 @@ public class HomeController {
     }
 
     @GetMapping("/spring")
-    public String getMappingEx(){
+    public String getMappingEx() {
         return "home";
     }
 
 
     @PostMapping("/spring")
-    public String postMappingEx(){
+    public String postMappingEx() {
         return "home";
     }
 
     @GetMapping("/home/{name}")
-    public String pathVariableEx(@PathVariable("name") String name){
+    public String pathVariableEx(@PathVariable("name") String name) {
 
-        System.out.println("name is: "+name);
+        System.out.println("name is: " + name);
         return "home";
     }
-    @GetMapping("/home/{name}/{email}")
-    public String pathVariableEx2(@PathVariable("name") String name,@PathVariable("email") String email) {
 
-        System.out.println("name is: " + name+" and email is "+email);
+    @GetMapping("/home/{name}/{email}")
+    public String pathVariableEx2(@PathVariable("name") String name, @PathVariable("email") String email) {
+
+        System.out.println("name is: " + name + " and email is " + email);
         return "home";
     }
 
@@ -57,4 +59,23 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/home/courses")
+    public String queryParam2(@RequestParam(value = "course", required = false, defaultValue = "gzio19") String course) {
+
+        System.out.println("name is: " + course);
+        return "home";
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
