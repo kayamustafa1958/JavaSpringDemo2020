@@ -50,4 +50,11 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/home/course")
+    public String queryParam(@RequestParam("course") String course) {
+
+        System.out.println("name is: " + course);
+        return "home";
+    }
+
 }
