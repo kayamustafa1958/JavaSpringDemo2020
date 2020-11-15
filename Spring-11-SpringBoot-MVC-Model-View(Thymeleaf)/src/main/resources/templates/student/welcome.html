@@ -10,5 +10,16 @@
 <h2 th:text="${name}"></h2>
 <h3 th:text="${course}"></h3>
 <h4 th:text="${subject}"></h4>
+<h5 th:text="${id}"></h5>
+<h2 th:text="${numbers.get(0)}"></h2>
+<h2 th:text="${birthday.toString()}"></h2>
+<h2 th:text="${'Hello '+ name}"></h2>
+<h2 th:text="${student.getId()}"></h2>
+<h2 th:text="${student.getFirstName()}"></h2>
+
+<!--Link-->
+
+<a th:href="@{https://cybertekschool.com}">Cybertek</a>
+
 </body>
 </html>
