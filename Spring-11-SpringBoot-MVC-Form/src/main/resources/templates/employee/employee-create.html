@@ -18,19 +18,19 @@
         <div class="card-body">
 
 
-            <form th:object="${employee}">
+            <form action="#" th:action="@{/employee/list}" method="post" th:object="${employee}">
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inputFirstName">First Name</label>
-                        <input type="email" class="form-control" th:field="*{firstName}" id="inputFirstName"
+                        <input type="text" class="form-control" th:field="*{firstName}" id="inputFirstName"
                                placeholder="First Name">
 
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputLastname">Last Name</label>
-                        <input type="password" class="form-control" th:field="*{lastName}" id="inputLastname"
-                               laceholder="Last Name">
-                        p
+                        <input type="text" class="form-control" th:field="*{lastName}" id="inputLastname"
+                               placeholder="Last Name">
+
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputBirthday">Birthday</label>
@@ -39,41 +39,58 @@
 
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" th:field="*{address}" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" th:field="*{address2}" id="inputAddress2"
-                           placeholder="Apartment, studio, or floor">
-                </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" th:field="*{city}" id="inputCity">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" th:field="*{state}" class="form-control">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" th:field="*{email}" id="inputEmail"
+                               placeholder="Enter your email">
 
-                            <option th:each="theState : ${stateList}" th:value="${theState}" th:text="${theState}">...</option>
-                        </select>
                     </div>
-                    <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" th:field="*{zipCode}" id="inputZip">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            I agree terms
-                        </label>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control" th:field="*{password}" id="inputPassword"
+                               placeholder="Enter your password">
+
                     </div>
                 </div>
-                <button type="submit" class="btn btn-danger">Register</button>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" th:field="*{address}" id="inputAddress"
+                               placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" th:field="*{address2}" id="inputAddress2"
+                               placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" th:field="*{city}" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" th:field="*{state}" class="form-control">
+
+                                <option th:each="theState : ${stateList}" th:value="${theState}" th:text="${theState}">
+                                    ...
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" th:field="*{zipCode}" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                I agree terms
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Register</button>
             </form>
         </div>
     </div>

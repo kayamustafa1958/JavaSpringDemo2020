@@ -1,14 +1,21 @@
 package com.cybertek.dataGenerator;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.cybertek.model.Employee;
+import lombok.*;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
+@Getter
+@Setter
+@RequiredArgsConstructor
 public class DataGenerator {
+
+          static List<Employee>employeeList=new ArrayList<Employee>();
+
 
 public static List<String> getStateList(){
      List<String> stateList = Arrays.asList(
@@ -65,4 +72,9 @@ public static List<String> getStateList(){
 
      return stateList;
 }
+public static List<Employee> addToListOfEmployee(Employee employee){
+     employeeList.add(employee);
+     return employeeList;
+}
+
 }
